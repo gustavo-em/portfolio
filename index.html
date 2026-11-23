@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Mobile engineer: React Native, native iOS and AI coding agents. Apps used by 200,000+ people a day.">
+<style>:root{color-scheme:light}html,body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<title>Gustavo Rosa Mobile Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  /* Layout: numbers first, then one short block per company with real store screenshots in a scrollable row. Text kept to a glance. */
+  :root {
+    --bg: #fbfaf8; --surface: #ffffff; --fg: #16191c; --muted: #5d6670;
+    --line: #e2e0db; --accent: #1f6feb; --accent-soft: #e8f0fe;
+    --display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1114; --surface: #171a1f; --fg: #eef1f4; --muted: #9aa3ad;
+      --line: #272c33; --accent: #6ea8ff; --accent-soft: #16233a; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1114; --surface: #171a1f; --fg: #eef1f4; --muted: #9aa3ad;
+    --line: #272c33; --accent: #6ea8ff; --accent-soft: #16233a; color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+  .wrap {
+    max-width: 960px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 52px 68px;
+    display: flex; flex-direction: column; gap: 48px;
+  }
+  h1 { font-family: var(--display); font-size: clamp(2.1rem, 6vw, 3.1rem); line-height: 1.05; margin: 0 0 8px; text-wrap: balance; }
+  h2 { font-family: var(--display); font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 22px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  h3 { font-family: var(--display); font-size: 1.15rem; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--accent); }
+  .role { font-family: var(--display); color: var(--muted); font-size: 1.05rem; margin: 0 0 14px; }
+  .lede { font-size: 1.22rem; max-width: 30ch; font-family: var(--display); line-height: 1.3; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 12px; margin-top: 26px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+  .stat b { display: block; font-family: var(--display); font-size: 1.45rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 0.85rem; color: var(--muted); }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; }
+  .meta span { background: var(--accent-soft); color: var(--fg); border-radius: 999px; padding: 5px 12px; font-size: 0.85rem; }
+  .blocks { display: flex; flex-direction: column; gap: 36px; }
+  .block { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .when { font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .context { color: var(--muted); font-size: 0.95rem; }
+  ul { margin: 0; padding-left: 20px; font-size: 1rem; }
+  li { margin-bottom: 5px; }
+  li b { font-variant-numeric: tabular-nums; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.92rem; }
+  .shots { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 6px; }
+  .shots img { height: 290px; width: auto; max-width: 100%; border-radius: 12px; border: 1px solid var(--line); flex: none; }
+  .app { display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; min-width: 0; }
+  .appline { display: flex; align-items: center; gap: 12px; }
+  .appline img { width: 52px; height: 52px; border-radius: 12px; flex: none; }
+  .appline p { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+  .gh { display: flex; flex-direction: column; gap: 14px; }
+  .gh img { width: 100%; max-width: 100%; border-radius: 12px; border: 1px solid var(--line); }
+  .contact { display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 1rem; }
+  footer { color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Gustavo Rosa</h1>
+    <p class="role">Mobile engineer — React Native, native iOS, AI coding agents</p>
+    <p class="lede">Apps that 200,000+ people use every day. Six years shipping them.</p>
+    <div class="stats">
+      <div class="stat"><b>200,000+</b><span>daily users of the apps I ship at PontoTel</span></div>
+      <div class="stat"><b>4.9★ / 4.8★</b><span>Google Play and App Store, 100K+ installs each</span></div>
+      <div class="stat"><b>31</b><span>pull requests merged into BigBlueButton</span></div>
+      <div class="stat"><b>19 days</b><span>zero to three of my own apps live on the App Store</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Work</h2>
+    <div class="blocks">
+
+      <div class="block">
+        <div class="head">
+          <h3>PontoTel — React Native, iOS, Android</h3>
+          <span class="when">2023 – 2026</span>
+        </div>
+        <p class="context">Time tracking for 4,000+ companies — XP, Puma, Levi's, Safra.</p>
+        <ul>
+          <li><b>200,000+</b> people clock in through these apps every day.</li>
+          <li>Cut observability cost by <b>50%</b>.</li>
+          <li>Face-recognition camera <b>20%</b> smoother on cheap Android phones.</li>
+          <li>I own the releases of both apps.</li>
+        </ul>
+        <div class="shots">
+          <img src="assets/bateponto-1.jpg" alt="Pontotel BatePonto store screenshot">
+          <img src="assets/bateponto-2.jpg" alt="Pontotel BatePonto store screenshot">
+          <img src="assets/gestao-1.jpg" alt="Pontotel Gestão store screenshot">
+          <img src="assets/gestao-2.jpg" alt="Pontotel Gestão store screenshot">
+          <img src="assets/bateponto-3.jpg" alt="Pontotel BatePonto store screenshot">
+          <img src="assets/gestao-3.jpg" alt="Pontotel Gestão store screenshot">
+        </div>
+        <div class="links">
+          <a href="https://pontotel.com.br">pontotel.com.br</a>
+          <a href="https://apps.apple.com/br/app/id1531898009">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.pontotel.bateponto">Google Play</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="head">
+          <h3>BigBlueButton Mobile (iMDT) — React Native, Swift</h3>
+          <span class="when">2021 – 2022</span>
+        </div>
+        <p class="context">Open-source virtual classroom used daily by millions — the default classroom inside Canvas, Moodle, D2L and Schoology.</p>
+        <ul>
+          <li><b>31</b> pull requests merged, all maintainer-reviewed.</li>
+          <li>Built the iOS screen sharing students see in class (Swift, ReplayKit, WebRTC).</li>
+          <li>Adoption up <b>20%</b> after the features I shipped.</li>
+        </ul>
+        <div class="links">
+          <a href="https://bigbluebutton.org">bigbluebutton.org</a>
+          <a href="https://github.com/bigbluebutton/bigbluebutton-mobile/pulls?q=is%3Apr+author%3Agustavo-em+is%3Amerged">My merged PRs</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="head">
+          <h3>Bling — React Native</h3>
+          <span class="when">2022 – 2023</span>
+        </div>
+        <p class="context">Banking app of one of Brazil's largest ERPs, used by 300,000+ businesses.</p>
+        <ul>
+          <li><b>2 seconds</b> off the app's loading time.</li>
+          <li>Built the authentication and password encryption of a banking app.</li>
+        </ul>
+        <div class="links"><a href="https://bling.com.br">bling.com.br</a></div>
+      </div>
+
+      <div class="block">
+        <div class="head">
+          <h3>Siaupro — React Native, full-stack</h3>
+          <span class="when">2020 – 2022</span>
+        </div>
+        <p class="context">Startup building automation tools for engineers and architects.</p>
+        <ul>
+          <li>API response from <b>3 minutes to 0.5 seconds</b>.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>My own apps — three live in 19 days</h2>
+    <div class="blocks">
+
+      <div class="app">
+        <div class="appline">
+          <img src="assets/aluza-icon.jpg" alt="Aluza app icon">
+          <div><h3>Aluza: Shared To-Do List</h3><p>React Native · iOS + Android</p></div>
+        </div>
+        <p class="context">Shared lists that keep working with no signal.</p>
+        <div class="shots">
+          <img src="assets/aluza-1.jpg" alt="Aluza store screenshot">
+          <img src="assets/aluza-2.jpg" alt="Aluza store screenshot">
+          <img src="assets/aluza-3.jpg" alt="Aluza store screenshot">
+          <img src="assets/aluza-4.jpg" alt="Aluza store screenshot">
+        </div>
+        <div class="links">
+          <a href="https://apps.apple.com/us/app/id6808513680">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.ideiasorganizetask">Google Play</a>
+        </div>
+      </div>
+
+      <div class="app">
+        <div class="appline">
+          <img src="assets/lesingo-icon.jpg" alt="Lesingo app icon">
+          <div><h3>Lesingo: Learn Words by Camera</h3><p>React Native · on-device vision</p></div>
+        </div>
+        <p class="context">Point the camera at anything and hear its name in another language. Recognition runs on the phone.</p>
+        <div class="shots">
+          <img src="assets/lesingo-4.jpg" alt="Lesingo recognizing a refrigerator through the camera">
+          <img src="assets/lesingo-en-1.jpg" alt="Lesingo store screenshot">
+          <img src="assets/lesingo-2.jpg" alt="Lesingo store screenshot">
+          <img src="assets/lesingo-en-2.jpg" alt="Lesingo store screenshot">
+          <img src="assets/lesingo-1.jpg" alt="Lesingo store screenshot">
+        </div>
+        <div class="links">
+          <a href="https://github.com/gustavo-em/lesingo#demo">Watch the demo</a>
+          <a href="https://apps.apple.com/us/app/id6809285148">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.gustavoem.saylens">Google Play</a>
+          <a href="https://github.com/gustavo-em/lesingo">Source</a>
+        </div>
+      </div>
+
+      <div class="app">
+        <div class="appline">
+          <img src="assets/roomspire-icon.jpg" alt="Roomspire app icon">
+          <div><h3>Roomspire: Home Decor Ideas</h3><p>100% Swift · iOS 26 SDK</p></div>
+        </div>
+        <p class="context">No React Native here: SwiftUI, SwiftData, async/await, in a 4 MB binary.</p>
+        <div class="shots">
+          <img src="assets/roomspire-1.jpg" alt="Roomspire store screenshot">
+          <img src="assets/roomspire-2.jpg" alt="Roomspire store screenshot">
+          <img src="assets/roomspire-3.jpg" alt="Roomspire store screenshot">
+        </div>
+        <div class="links">
+          <a href="https://apps.apple.com/us/app/id6814299606">App Store</a>
+          <a href="https://github.com/gustavo-em/roomspire">Source</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>AI agents in my daily work</h2>
+    <div class="blocks">
+      <div class="block">
+        <h3>Orchestrator Features</h3>
+        <p class="context">Agents that plan a React Native feature, write it, review the diff, then install the app on a real device and drive the UI to check it works. Built on Claude Code and Codex — the same way the three apps above shipped in 19 days.</p>
+        <div class="links"><a href="https://github.com/gustavo-em/orchestrator-features">github.com/gustavo-em/orchestrator-features</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Everything else is on GitHub</h2>
+    <div class="gh">
+      <a href="https://github.com/gustavo-em"><img src="assets/github.jpg" alt="Gustavo Rosa's GitHub profile page"></a>
+      <div class="links"><a href="https://github.com/gustavo-em">github.com/gustavo-em</a></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    <div class="meta">
+      <span>React Native</span><span>TypeScript</span><span>Swift</span><span>SwiftUI</span><span>UIKit</span><span>Kotlin</span><span>Xcode</span><span>Native modules</span><span>Firebase</span><span>Node.js</span><span>Jest · Maestro</span><span>Claude Code · Codex</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <span>gustavo.emanuel01@outlook.com</span>
+      <a href="https://linkedin.com/in/gustavoemanuelrosa">linkedin.com/in/gustavoemanuelrosa</a>
+      <a href="https://github.com/gustavo-em">github.com/gustavo-em</a>
+    </div>
+  </section>
+
+  <footer>Brazil · UTC-3, full overlap with US Eastern · English C1 (EF SET)</footer>
+</div>
+
+</body>
+</html>
